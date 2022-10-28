@@ -29,12 +29,11 @@ function isEvenorOdd(sum) {
 console.log(isEvenorOdd(sum))
 
 // Dichiariamo chi ha vinto.
-if(userChoiceNum === isEvenorOdd(sum) && userChoice === "pari"){
-    console.log("Ha vinto l'utente");
-} else if (userChoiceNum === isEvenorOdd(sum) && userChoice === "pari"){
-    console.log("Ha vinto il Pc");
-} else if (userChoiceNum === isEvenorOdd(sum) && userChoice === "dispari"){
-    console.log("Ha vinto l'utente");
-} else if (userChoiceNum === isEvenorOdd(sum) && userChoice === "dispari"){
-    console.log("Ha vinto il Pc");
+if (isEvenorOdd(sum) == true)
+{
+    alert("Vince il numero pari");
+}
+else
+{
+    alert("Vince il numero dispari");
 }
